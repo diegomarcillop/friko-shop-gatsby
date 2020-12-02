@@ -1,0 +1,102 @@
+.header {
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+
+  &__titleApp {
+    font-weight: 700;
+    font-size: 24px !important;
+  }
+
+  width: 100%;
+  &__selectFlag {
+    width: 80px;
+    &__content {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: flex-end;
+      text-align: center;
+      img {
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+      }
+      span {
+        font-size: 13px;
+        font-weight: bold;
+        padding-right: 5px;
+      }
+    }
+  }
+
+  .subMenu {
+    text-align: center;
+    &--small {
+      width: 40px;
+    }
+    &--large {
+      width: 100px;
+    }
+  }
+
+  &__icon {
+    color: black;
+    &:focus {
+      color: black;
+    }
+  }
+
+  a {
+    color: black !important;
+    font-size: 16px;
+  }
+
+  .ant-select-selector {
+    height: 30px !important;
+  }
+  .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    background-color: white !important;
+    border: none !important;
+    color: black !important;
+  }
+
+  .ant-menu-dark .ant-menu-item-selected .ant-menu-item-icon,
+  .ant-menu-dark .ant-menu-item-selected .anticon {
+    color: rgb(32, 97, 218);
+  }
+
+  .ant-menu.ant-menu-dark .ant-menu-item-selected,
+  .ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected {
+    background-color: white !important;
+    color: black !important;
+  }
+  li {
+    font-weight: bold;
+    color: black !important;
+
+    &:hover,
+    &:focus {
+      background-color: white !important;
+      color: black !important;
+    }
+  }
+  .ant-menu.ant-menu-dark,
+  .ant-menu-dark .ant-menu-sub,
+  .ant-menu.ant-menu-dark .ant-menu-sub {
+    background-color: white;
+    &:hover,
+    &:focus {
+      background-color: white !important;
+      color: black !important;
+    }
+  }
+
+  .ant-select-single.ant-select-show-arrow .ant-select-selection-item,
+  .ant-select-single.ant-select-show-arrow .ant-select-selection-placeholder,
+  .ant-select-single:not(.ant-select-customize-input) .ant-select-selector,
+  .ant-menu-item,
+  .ant-menu-submenu-title {
+    padding: 0px !important;
+  }
+}
