@@ -2,7 +2,7 @@ import { Breadcrumb, Col, Collapse, Radio, Row } from "antd"
 import Form from "antd/lib/form/Form"
 import React from "react"
 import CarouselPhotos from "../../components/CarouselPhotos/CarouselPhotos"
-import Container from "../../components/container"
+import Container from "../../components/Container/Container"
 
 const { Panel } = Collapse
 

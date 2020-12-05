@@ -1,5 +1,5 @@
 import React from "react"
-import Container from "../components/container"
+import Container from "../components/Container/Container"
 import SEO from "../components/seo"
 
 const NotFoundPage = () => (
