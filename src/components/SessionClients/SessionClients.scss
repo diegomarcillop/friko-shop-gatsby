@@ -1,0 +1,21 @@
+.sessionClients {
+  &__imageClient {
+    width: 100%;
+    border-width: 2px;
+    cursor: pointer;
+    object-fit: contain;
+    opacity: 0.2;
+    &:hover {
+      opacity: 0.6;
+      transition: all ease 0.8s;
+    }
+  }
+
+  &__separator {
+    width: 100%;
+    background-color: $color_G3;
+    opacity: 0.2;
+    margin-top: 10px;
+    height: 1px;
+  }
+}
