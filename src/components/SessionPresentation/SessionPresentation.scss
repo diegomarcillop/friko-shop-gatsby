@@ -1,0 +1,72 @@
+.sessionPresentation {
+  font-family: "PT Sans", sans-serif;
+
+  &__image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .title {
+      font-size: 3em;
+      line-height: 1.2em;
+      font-weight: 700;
+    }
+    @media only screen and (max-width: 600px) {
+      .title {
+        font-size: 2em;
+        padding-bottom: 16px;
+      }
+    }
+
+    .description {
+      font-family: "Roboto", sans-serif;
+    }
+  }
+  &__buttonShop {
+    width: 120px;
+    height: 50px;
+    background-color: $color_G2;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    &:hover,
+    &:focus {
+      background-color: $color_G3;
+      color: white;
+    }
+  }
+
+  .viewContainer {
+    h4 {
+      padding-top: 5px;
+      line-height: 20px;
+    }
+  }
+
+  &__buttonView {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border-width: 1px;
+    border-color: $color_G3;
+    .iconButton {
+      padding: 4px 0px 0px 4px;
+      font-size: 40px;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $color_G3;
+      color: white;
+      border: none;
+    }
+  }
+}
