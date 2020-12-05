@@ -7,6 +7,11 @@ const Image = ({ name, ...props }) => {
     product_3: require("./../../assets/img/image_1.jpg"),
     flag_1: require("./../../assets/img/flag_us.png"),
     flag_2: require("./../../assets/img/flag_es.png"),
+    portada: require("./../../assets/img/image_4.jpg"),
+    client_1: require("./../../assets/img/client_1.svg"),
+    client_2: require("./../../assets/img/client_2.svg"),
+    client_3: require("./../../assets/img/client_3.svg"),
+    client_4: require("./../../assets/img/client_4.svg"),
   }
   return <img src={_handleSelectPath[name]} {...props} alt={name} />
 }
