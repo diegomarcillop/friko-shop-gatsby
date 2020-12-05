@@ -1,0 +1,27 @@
+.sessionFeatured {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  &__title {
+    font-family: "PT Sans", sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+  }
+  &__buttonProducts {
+    font-family: "PT Sans", sans-serif;
+    border-width: 1px;
+    border-color: $color_G2;
+    color: $color_G3;
+    font-weight: 700;
+    border-radius: 5px;
+    height: 50px;
+    transition: all ease 0.8s;
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+      color: $color_G3;
+      transition: all ease-out 0.8s;
+      border-width: 1px;
+      border-color: $color_G2;
+    }
+  }
+}
