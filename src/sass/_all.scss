@@ -1,4 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Asap:wght@400;600;700&display=swap");
-@import "../pages/product-detail/index.scss";
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,700&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+
+//components
 @import "../components/CarouselPhotos/CarouselPhotos.scss";
 @import "../components/Header/Header.scss";
+@import "../components/SessionPresentation/SessionPresentation.scss";
+@import "../components/SessionClients/SessionClients.scss";
+@import "../components/CardProduct/CardProduct.scss";
+@import "../components/Container/Container.scss";
+@import "../components/SessionFeatured/SessionFeatured.scss";
+
+//pages
+@import "../pages/product-detail/index.scss";
