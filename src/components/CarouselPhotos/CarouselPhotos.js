@@ -30,7 +30,7 @@ export default function CarouselPhotos() {
         <Row className="elementsImageContainer" justify="space-between">
           {images.map((image, index) => {
             return (
-              <Col lg={24} key={image.id}>
+              <Col lg={24} key={image.id} xs={4}>
                 <Image
                   onClick={() => setSelected(index)}
                   name={image.name}
