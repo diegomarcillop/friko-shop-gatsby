@@ -3,6 +3,7 @@ import Container from "../components/Container/Container"
 import SEO from "../components/seo"
 import SessionClients from "../components/SessionClients/SessionClients"
 import SessionFeatured from "../components/SessionFeatured/SessionFeatured"
+import SessionFeatures from "../components/SessionFeatures/SessionFeatures"
 import SessionPresentation from "../components/SessionPresentation/SessionPresentation"
 import "../sass/index.scss"
 
@@ -12,6 +13,7 @@ const IndexPage = () => (
     <SessionPresentation />
     <SessionClients />
     <SessionFeatured />
+    <SessionFeatures />
   </Container>
 )
 
