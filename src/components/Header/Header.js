@@ -21,8 +21,7 @@ export default function Headerr() {
           </Link>
         </h1>
         <Menu
-          style={{ float: "right", color: "black" }}
-          theme="dark"
+          style={{ float: "right", color: "black", backgroundColor: "white" }}
           mode="horizontal"
         >
           <Menu.Item className="subMenu--large">
