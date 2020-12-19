@@ -1,0 +1,33 @@
+.footer{
+    background-color: $color_G1;
+    color: white;
+    height: 50vh;
+    padding-top: 32px;
+
+    h1{
+        font-weight: bold;
+        color: white;
+    }
+
+    h4{
+        color: white;
+        font-weight: 700;
+        font-size: 15px;
+    }
+
+    ul{
+        list-style: none;
+        padding: 0px;
+        li{
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+            font-size: 14px;
+            margin: 0px;
+            padding: 8px 0px 8px 0px;
+            opacity: 0.6;
+            a{
+                color: white; 
+            }
+        }
+    }
+}
