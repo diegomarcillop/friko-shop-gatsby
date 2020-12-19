@@ -6,7 +6,7 @@ import { HeartOutlined, PlusOutlined } from "@ant-design/icons"
 export default function CardProduct({ data }) {
   return (
     <Card className="cardProduct">
-      <Image name="product_1" className="cardProduct__image" />
+      <Image src={data.image} name="product_1" className="cardProduct__image" />
       <h2 className="cardProduct__name">{data.name}</h2>
 
       <Row justify="space-between" className="cardProduct__content">
