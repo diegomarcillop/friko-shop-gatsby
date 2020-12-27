@@ -1,16 +1,23 @@
 .sessionFeatures{
     font-family: "PT Sans", sans-serif;
-    display: flex;
+     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
     padding: 2em 0px 2em 0px;
     min-height: 100vh;  
+    background-image: url("../assets/img/background.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
     &__title{
         font-weight: 700;
         padding-bottom: 2em;
         font-size: 32px;
+       align-self: center;
     }
+
+  
 
     &__card{
         border-radius: 5px;
