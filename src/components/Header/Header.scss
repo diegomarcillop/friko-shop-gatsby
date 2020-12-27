@@ -10,7 +10,7 @@
 
   width: 100%;
   &__selectFlag {
-    width: 80px;
+    width: 75px;
     &__content {
       display: flex;
       flex-direction: row;
@@ -21,6 +21,7 @@
         width: 30px;
         height: 30px;
         border-radius: 100%;
+        object-fit: cover;
       }
       span {
         font-size: 13px;
@@ -32,11 +33,16 @@
 
   .subMenu {
     text-align: center;
-    &--small {
-      width: 40px;
-    }
+    width: 10px;
+     &--small {
+      width: 30px;
+      margin: 0px 5px 0px 5px!important;
+      text-align: center;
+     }
     &--large {
-      width: 100px;
+      width:100px;
+      text-align: center;
+      margin: 0px 5px 0px 5px!important;
     }
   }
 

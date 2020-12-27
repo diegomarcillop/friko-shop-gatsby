@@ -13,6 +13,7 @@
         color: white;
         font-weight: 700;
         font-size: 15px;
+        text-transform: uppercase;
     }
 
     ul{
@@ -26,7 +27,13 @@
             padding: 8px 0px 8px 0px;
             opacity: 0.6;
             a{
+                font-weight: 400;
                 color: white; 
+                transition: all ease-in-out .5;
+                &:hover{
+                    opacity: 0.8;
+                    
+                }
             }
         }
     }

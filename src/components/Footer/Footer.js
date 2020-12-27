@@ -1,8 +1,11 @@
 import { Col, Row } from "antd"
 import { Link } from "gatsby"
 import React from "react"
+import { useTranslation } from "react-i18next"
 
 export default function Footer() {
+  const { t } = useTranslation()
+
   return (
     <div className="footer">
       <Col lg={{ span: 20, offset: 1 }}>
@@ -11,10 +14,10 @@ export default function Footer() {
             <h1>FRIKO</h1>
           </Col>
           <Col lg={6} xs={10}>
-            <h4>COMPANY</h4>
+            <h4>{t("footer.company")}</h4>
             <ul>
               <li>
-                <Link to="/about">About us</Link>
+                <Link to="/about">{t("global.about")}</Link>
               </li>
               <li>
                 <Link to="/blog">Blog</Link>
@@ -23,7 +26,7 @@ export default function Footer() {
           </Col>
 
           <Col lg={6} xs={10}>
-            <h4>CONNECT</h4>
+            <h4>{t("footer.connect")}</h4>
             <ul>
               <li>
                 <Link to="http://facebook.com/frikoshop" target="_blank">
@@ -44,7 +47,7 @@ export default function Footer() {
           </Col>
 
           <Col lg={6} xs={10}>
-            <h4>CONTACT</h4>
+            <h4>{t("footer.contact")}</h4>
             <ul>
               <li>frikohelp@friko.com</li>
               <li>+57 3102345531</li>

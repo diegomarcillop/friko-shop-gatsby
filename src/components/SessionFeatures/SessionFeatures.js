@@ -1,26 +1,29 @@
 import { Col, Row } from "antd"
 import React from "react"
+import { useTranslation } from "react-i18next"
 import Image from "../Image/Image"
 
 export default function SessionFeatures() {
+  const { t } = useTranslation()
+
   const features = [
     {
       id: 1,
-      name: "Compra segura",
+      name: t("global.shopping"),
       description:
         "Duis elit eiusmod elit eiusmod non enim duis non enim duis.",
       image: require("../../assets/img/pago.svg"),
     },
     {
       id: 2,
-      name: "Envio gratis",
+      name: t("global.shipping"),
       description:
         "Duis elit elit eiusmod non enim duis eiusmod non enim duis.",
       image: require("../../assets/img/mensaje.svg"),
     },
     {
       id: 3,
-      name: "Devoluciones",
+      name: t("global.returns"),
       description:
         "Duis elit elit eiusmod non enim duis eiusmod non enim duis.",
       image: require("../../assets/img/devolucion.svg"),
@@ -28,8 +31,9 @@ export default function SessionFeatures() {
   ]
 
   return (
-    <Col className="sessionFeatures" lg={{ span: 22, offset: 1 }}>
+    <Col className="sessionFeatures">
       <h2 className="sessionFeatures__title">Proceso confiable</h2>
+
       <Row justify="space-between">
         {features.map(feature => {
           return (

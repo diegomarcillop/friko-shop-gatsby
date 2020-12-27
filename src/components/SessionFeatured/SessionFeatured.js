@@ -1,8 +1,11 @@
 import { Button, Col, Row } from "antd"
 import React from "react"
+import { useTranslation } from "react-i18next"
 import CardProduct from "../CardProduct/CardProduct"
 
 export default function SessionFeatured() {
+  const { t } = useTranslation()
+
   const products = [
     {
       id: 1,
@@ -52,7 +55,7 @@ export default function SessionFeatured() {
       <Row justify="center">
         <Col lg={6}>
           <Button block className="sessionFeatured__buttonProducts">
-            Ver mas productos
+            {t("button.show_products")}
           </Button>
         </Col>
       </Row>
