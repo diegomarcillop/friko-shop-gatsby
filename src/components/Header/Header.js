@@ -22,9 +22,24 @@ export default function Headerr() {
     await i18n.changeLanguage(value)
   }
 
+  const languages = [
+    {
+      id: 1,
+      text: "ES",
+      key: "es",
+      image: "flag_2",
+    },
+    {
+      id: 2,
+      text: "US",
+      key: "us",
+      image: "flag_1",
+    },
+  ]
+
   return (
     <Header className="header">
-      <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
+      <div style={{ margin: "0 auto" }}>
         <h1 style={{ margin: "margin 0", float: "left" }}>
           <Link to="/" className="header__titleApp">
             FRIKO
@@ -66,18 +81,16 @@ export default function Headerr() {
               onChange={value => handleChangeLanguage(value)}
               suffixIcon=""
             >
-              <Select.Option value={"en"}>
-                <div className="header__selectFlag__content">
-                  <span>US</span>
-                  <Image name="flag_1" />
-                </div>
-              </Select.Option>
-              <Select.Option value={"es"}>
-                <div className="header__selectFlag__content">
-                  <span>ES</span>
-                  <Image name="flag_2" />
-                </div>
-              </Select.Option>
+              {languages.map(language => {
+                return (
+                  <Select.Option value={language.key}>
+                    <div className="header__selectFlag__content">
+                      <span>{language.text}</span>
+                      <Image name={language.image} />
+                    </div>
+                  </Select.Option>
+                )
+              })}
             </Select>
           </Menu.Item>
         </Menu>
