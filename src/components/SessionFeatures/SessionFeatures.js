@@ -32,7 +32,7 @@ export default function SessionFeatures() {
 
   return (
     <Col className="sessionFeatures">
-      <h2 className="sessionFeatures__title">Proceso confiable</h2>
+      <h2 className="sessionFeatures__title">{t("global.reliable")}</h2>
 
       <Row justify="space-between">
         {features.map(feature => {

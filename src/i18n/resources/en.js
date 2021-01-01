@@ -8,6 +8,7 @@ const global = {
   shopping: "Safe shopping",
   shipping: "Free shipping",
   returns: "Returns",
+  reliable: "Reliable process",
 }
 
 const footer = {
