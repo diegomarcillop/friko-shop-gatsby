@@ -33,8 +33,8 @@ export default function SessionPresentation() {
           </Col>
         </Row>
       </Col>
-      <Col lg={12}>
-        <Image className="sessionPresentation__image" name="portada" />
+      <Col lg={12} className="sessionPresentation__containerImage">
+        <Image className="image-portada" name="portada" />
       </Col>
     </Row>
   )

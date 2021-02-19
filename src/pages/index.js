@@ -1,10 +1,10 @@
 import React from "react"
 import Container from "../components/Container/Container"
 import SEO from "../components/seo"
-import SessionClients from "../components/SessionClients/SessionClients"
-import SessionFeatured from "../components/SessionFeatured/SessionFeatured"
-import SessionFeatures from "../components/SessionFeatures/SessionFeatures"
-import SessionPresentation from "../components/SessionPresentation/SessionPresentation"
+import SessionClients from "../components/SectionClients/SectionClients"
+import SessionFeatured from "../components/SectionFeatured/SectionFeatured"
+import SessionFeatures from "../components/SectionFeatures/SectionFeatures"
+import SessionPresentation from "../components/SectionPresentation/SectionPresentation"
 import "../sass/index.scss"
 
 const IndexPage = () => (

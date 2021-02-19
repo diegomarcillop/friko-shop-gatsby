@@ -1,40 +1,40 @@
-.footer{
-    background-color: $color_G1;
-    color: white;
-    height: 50vh;
-    padding-top: 32px;
-
-    h1{
-        font-weight: bold;
-        color: white;
+.footer {
+  background-color: $color_G1;
+  color: white;
+  height: 50vh;
+  max-height: 400px;
+  padding-top: 32px;
+  &__content{
+    max-width: 1400px;
+    margin: 0 auto;
+    h1 {
+      font-weight: bold;
+      color: white;
     }
-
-    h4{
-        color: white;
-        font-weight: 700;
-        font-size: 15px;
-        text-transform: uppercase;
+    h4 {
+      color: white;
+      font-weight: 700;
+      font-size: 15px;
+      text-transform: uppercase;
     }
-
-    ul{
-        list-style: none;
-        padding: 0px;
-        li{
-            font-family: "Roboto", sans-serif;
-            font-weight: 300;
-            font-size: 14px;
-            margin: 0px;
-            padding: 8px 0px 8px 0px;
-            opacity: 0.6;
-            a{
-                font-weight: 400;
-                color: white; 
-                transition: all ease-in-out .5;
-                &:hover{
-                    opacity: 0.8;
-                    
-                }
-            }
+    ul {
+      list-style: none;
+      padding: 0px;
+      li {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        margin: 0px;
+        padding: 8px 0px 8px 0px;
+        a {
+          font-weight: 400;
+          color: white;
+          transition: all ease-in-out 0.5;
+          &:hover {
+            opacity: 0.8;
+          }
         }
+      }
     }
+  }
 }

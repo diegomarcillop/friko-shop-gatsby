@@ -1,11 +1,15 @@
 .sessionPresentation {
   font-family: "PT Sans", sans-serif;
-
-  &__image {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    border-radius: 10px;
+  &__containerImage{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .image-portada {
+      width: 80%;
+      height: 450px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
   }
 
   &__content {

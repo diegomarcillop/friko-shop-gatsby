@@ -1,7 +1,8 @@
 .header {
-  position: fixed;
   z-index: 1;
   background-color: white;
+  max-width: 1400px;
+  margin: 0 auto;
 
   &__titleApp {
     font-weight: 700;

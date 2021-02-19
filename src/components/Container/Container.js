@@ -7,13 +7,13 @@ const { Content } = Layout
 
 const Container = ({ children }) => {
   return (
-    <Layout>
+    <div>
       <Header />
       <Content className="container">
         <div>{children}</div>
       </Content>
       <Footer />
-    </Layout>
+    </div>
   )
 }
 Container.propTypes = {

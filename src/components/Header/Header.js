@@ -13,9 +13,7 @@ import {
 import Image from "../Image/Image"
 import { useTranslation } from "react-i18next"
 
-const { Header } = Layout
-
-export default function Headerr() {
+export default function Header() {
   const { t } = useTranslation()
 
   const handleChangeLanguage = async value => {
@@ -38,7 +36,7 @@ export default function Headerr() {
   ]
 
   return (
-    <Header className="header">
+    <Layout.Header className="header">
       <div style={{ margin: "0 auto" }}>
         <h1 style={{ margin: "margin 0", float: "left" }}>
           <Link to="/" className="header__titleApp">
@@ -50,27 +48,27 @@ export default function Headerr() {
           mode="horizontal"
         >
           <Menu.Item className="subMenu subMenu--large">
-            <Link to="/product-detail">
+            <Link to="/">
               <SearchOutlined className="header__icon" />
             </Link>
           </Menu.Item>
           <Menu.Item className="subMenu subMenu--large">
-            <Link to="/product-detail" className="header__link">
+            <Link to="/" className="header__link">
               {t("global.store")}
             </Link>
           </Menu.Item>
           <Menu.Item className="subMenu subMenu--small">
-            <Link to="/product-detail">
+            <Link to="/">
               <ShoppingCartOutlined className="header__icon" />
             </Link>
           </Menu.Item>
           <Menu.Item className="subMenu subMenu--small">
-            <Link to="/product-detail">
+            <Link to="/">
               <HeartOutlined className="header__icon" />
             </Link>
           </Menu.Item>
           <Menu.Item className="subMenu--small">
-            <Link to="/product-detail">
+            <Link to="/">
               <UserOutlined className="header__icon" />
             </Link>
           </Menu.Item>
@@ -83,7 +81,7 @@ export default function Headerr() {
             >
               {languages.map(language => {
                 return (
-                  <Select.Option value={language.key}>
+                  <Select.Option key={language.id} value={language.key}>
                     <div className="header__selectFlag__content">
                       <span>{language.text}</span>
                       <Image name={language.image} />
@@ -95,6 +93,6 @@ export default function Headerr() {
           </Menu.Item>
         </Menu>
       </div>
-    </Header>
+    </Layout.Header>
   )
 }

@@ -8,9 +8,9 @@ export default function Footer() {
 
   return (
     <div className="footer">
-      <Col lg={{ span: 20, offset: 1 }}>
+      <Col lg={{ span: 20, offset: 2 }} className="footer__content">
         <Row justify="center">
-          <Col lg={6} xs={10}>
+          <Col lg={{span: 4, offset: 1}} xs={10}>
             <h1>FRIKO</h1>
           </Col>
           <Col lg={6} xs={10}>
